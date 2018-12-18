@@ -35,6 +35,8 @@ s.dependency 'RxSwift'
 
 s.dependency 'RxCocoa'
 
+s.dependency 'RxDataSources'
+
 end
 
 
