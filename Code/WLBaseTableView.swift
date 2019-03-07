@@ -9,9 +9,13 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import WLToolsKit
+
 open class WLBaseTableView: UITableView {
     
     public let disposeBag = DisposeBag()
+    
+    fileprivate final let emptyView: WLTableViewEmptyView = WLTableViewEmptyView(frame: .zero)
     
     public static func baseTableView() -> Self {
         
@@ -48,6 +52,30 @@ extension WLBaseTableView {
         showsHorizontalScrollIndicator = false
         
         backgroundColor = .clear
+        
+        separatorStyle = .none
+        
+        keyboardDismissMode = .onDrag
+        
     }
 }
 
+extension WLBaseTableView {
+    
+    public func emptyViewShow(_ source: WLTableViewEmptyViewSource) {
+        
+        if source.canResponse {
+            
+            addSubview(emptyView)
+        } else {
+            
+            superview?.addSubview(emptyView)
+        }
+        
+        emptyView.frame = source.emptyFrame
+        
+        emptyView.backgroundColor = WLHEXCOLOR(hexColor: source.emptyBackgroundHex)
+        
+        emptyView.emptyViewShow(source)
+    }
+}

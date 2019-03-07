@@ -38,8 +38,6 @@ public extension Reactive where Base: MJRefreshComponent {
 
 open class WLBaseRefreshTableView: WLBaseTableView {
     
-    
-    
 }
 extension WLBaseRefreshTableView {
     
@@ -54,7 +52,7 @@ extension WLBaseRefreshTableView {
         
         //初始化数据
         let mj_footer = MJRefreshBackNormalFooter()
-    
+        
         self.mj_footer = mj_footer
     }
 }

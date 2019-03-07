@@ -13,11 +13,14 @@
 		6C8AF96721AAD74700FC4F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AF96521AAD74700FC4F7D /* LaunchScreen.storyboard */; };
 		6C8AF97221AAD74700FC4F7D /* WLBaseTableViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF97121AAD74700FC4F7D /* WLBaseTableViewDemoTests.swift */; };
 		6C8AF97D21AAD74700FC4F7D /* WLBaseTableViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF97C21AAD74700FC4F7D /* WLBaseTableViewDemoUITests.swift */; };
-		6C8AF98C21AAD8B700FC4F7D /* WLBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF98B21AAD8B700FC4F7D /* WLBaseTableView.swift */; };
-		6C8AF98E21AAD8D000FC4F7D /* WLBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF98D21AAD8D000FC4F7D /* WLBaseTableViewCell.swift */; };
 		6C8AF99021AAD94F00FC4F7D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AF98F21AAD94F00FC4F7D /* Podfile */; };
-		6C8AF99421AAE34900FC4F7D /* WLBaseRefreshTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */; };
-		6CDD0DB421C93B37005165F4 /* WLSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDD0DB321C93B37005165F4 /* WLSectionModel.swift */; };
+		6CF8C2B22230C7A7001E45ED /* WLBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF8C2AB2230C7A7001E45ED /* WLBaseTableView.swift */; };
+		6CF8C2B32230C7A7001E45ED /* WLTableViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF8C2AC2230C7A7001E45ED /* WLTableViewSource.swift */; };
+		6CF8C2B42230C7A7001E45ED /* WLTableViewEmptyViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF8C2AD2230C7A7001E45ED /* WLTableViewEmptyViewSource.swift */; };
+		6CF8C2B52230C7A7001E45ED /* WLSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF8C2AE2230C7A7001E45ED /* WLSectionModel.swift */; };
+		6CF8C2B62230C7A7001E45ED /* WLTableViewEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF8C2AF2230C7A7001E45ED /* WLTableViewEmptyView.swift */; };
+		6CF8C2B72230C7A7001E45ED /* WLBaseRefreshTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF8C2B02230C7A7001E45ED /* WLBaseRefreshTableView.swift */; };
+		6CF8C2B82230C7A7001E45ED /* WLBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF8C2B12230C7A7001E45ED /* WLBaseTableViewCell.swift */; };
 		CE953093628653B26BD51CD0 /* libPods-WLBaseTableViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09DBC9B22B2DB574F81F4CCC /* libPods-WLBaseTableViewDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -55,12 +58,15 @@
 		6C8AF97821AAD74700FC4F7D /* WLBaseTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WLBaseTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8AF97C21AAD74700FC4F7D /* WLBaseTableViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseTableViewDemoUITests.swift; sourceTree = "<group>"; };
 		6C8AF97E21AAD74700FC4F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C8AF98B21AAD8B700FC4F7D /* WLBaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseTableView.swift; sourceTree = "<group>"; };
-		6C8AF98D21AAD8D000FC4F7D /* WLBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseTableViewCell.swift; sourceTree = "<group>"; };
 		6C8AF98F21AAD94F00FC4F7D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseRefreshTableView.swift; sourceTree = "<group>"; };
 		6C8AF99721ABA3A700FC4F7D /* WLBaseTableViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WLBaseTableViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		6CDD0DB321C93B37005165F4 /* WLSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSectionModel.swift; sourceTree = "<group>"; };
+		6CF8C2AB2230C7A7001E45ED /* WLBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBaseTableView.swift; sourceTree = "<group>"; };
+		6CF8C2AC2230C7A7001E45ED /* WLTableViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTableViewSource.swift; sourceTree = "<group>"; };
+		6CF8C2AD2230C7A7001E45ED /* WLTableViewEmptyViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTableViewEmptyViewSource.swift; sourceTree = "<group>"; };
+		6CF8C2AE2230C7A7001E45ED /* WLSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSectionModel.swift; sourceTree = "<group>"; };
+		6CF8C2AF2230C7A7001E45ED /* WLTableViewEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTableViewEmptyView.swift; sourceTree = "<group>"; };
+		6CF8C2B02230C7A7001E45ED /* WLBaseRefreshTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBaseRefreshTableView.swift; sourceTree = "<group>"; };
+		6CF8C2B12230C7A7001E45ED /* WLBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBaseTableViewCell.swift; sourceTree = "<group>"; };
 		8E9EB54F3A24C9EF23DA27D4 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BAA097F1BE696B8ACA1743 /* Pods-WLBaseTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLBaseTableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CF2C28173AD663DCC809B856 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +125,7 @@
 		6C8AF95B21AAD74500FC4F7D /* WLBaseTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6C8AF98A21AAD7C200FC4F7D /* Code */,
+				6CF8C2AA2230C7A7001E45ED /* Code */,
 				6C8AF95C21AAD74500FC4F7D /* AppDelegate.swift */,
 				6C8AF95E21AAD74500FC4F7D /* ViewController.swift */,
 				6C8AF99721ABA3A700FC4F7D /* WLBaseTableViewDemo-Bridging-Header.h */,
@@ -148,18 +154,6 @@
 			path = WLBaseTableViewDemoUITests;
 			sourceTree = "<group>";
 		};
-		6C8AF98A21AAD7C200FC4F7D /* Code */ = {
-			isa = PBXGroup;
-			children = (
-				6C8AF98B21AAD8B700FC4F7D /* WLBaseTableView.swift */,
-				6C8AF98D21AAD8D000FC4F7D /* WLBaseTableViewCell.swift */,
-				6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */,
-				6CDD0DB321C93B37005165F4 /* WLSectionModel.swift */,
-			);
-			name = Code;
-			path = ../../Code;
-			sourceTree = "<group>";
-		};
 		6C8AF99621AB8FDE00FC4F7D /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +162,21 @@
 				8E9EB54F3A24C9EF23DA27D4 /* Pods_WLBaseTableViewDemo.framework */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		6CF8C2AA2230C7A7001E45ED /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				6CF8C2AB2230C7A7001E45ED /* WLBaseTableView.swift */,
+				6CF8C2AC2230C7A7001E45ED /* WLTableViewSource.swift */,
+				6CF8C2AD2230C7A7001E45ED /* WLTableViewEmptyViewSource.swift */,
+				6CF8C2AE2230C7A7001E45ED /* WLSectionModel.swift */,
+				6CF8C2AF2230C7A7001E45ED /* WLTableViewEmptyView.swift */,
+				6CF8C2B02230C7A7001E45ED /* WLBaseRefreshTableView.swift */,
+				6CF8C2B12230C7A7001E45ED /* WLBaseTableViewCell.swift */,
+			);
+			name = Code;
+			path = ../../Code;
 			sourceTree = "<group>";
 		};
 		765512925F26AF5F0D3B50ED /* Frameworks */ = {
@@ -376,12 +385,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF8C2B82230C7A7001E45ED /* WLBaseTableViewCell.swift in Sources */,
 				6C8AF95F21AAD74500FC4F7D /* ViewController.swift in Sources */,
-				6C8AF98E21AAD8D000FC4F7D /* WLBaseTableViewCell.swift in Sources */,
+				6CF8C2B32230C7A7001E45ED /* WLTableViewSource.swift in Sources */,
+				6CF8C2B52230C7A7001E45ED /* WLSectionModel.swift in Sources */,
+				6CF8C2B42230C7A7001E45ED /* WLTableViewEmptyViewSource.swift in Sources */,
 				6C8AF95D21AAD74500FC4F7D /* AppDelegate.swift in Sources */,
-				6C8AF98C21AAD8B700FC4F7D /* WLBaseTableView.swift in Sources */,
-				6CDD0DB421C93B37005165F4 /* WLSectionModel.swift in Sources */,
-				6C8AF99421AAE34900FC4F7D /* WLBaseRefreshTableView.swift in Sources */,
+				6CF8C2B62230C7A7001E45ED /* WLTableViewEmptyView.swift in Sources */,
+				6CF8C2B22230C7A7001E45ED /* WLBaseTableView.swift in Sources */,
+				6CF8C2B72230C7A7001E45ED /* WLBaseRefreshTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
