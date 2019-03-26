@@ -56,7 +56,6 @@ extension WLBaseTableView {
         separatorStyle = .none
         
         keyboardDismissMode = .onDrag
-        
     }
 }
 
@@ -64,13 +63,9 @@ extension WLBaseTableView {
     
     public func emptyViewShow(_ source: WLTableViewEmptyViewSource) {
         
-        if source.canResponse {
+        if source.canResponse { addSubview(emptyView) }
             
-            addSubview(emptyView)
-        } else {
-            
-            superview?.addSubview(emptyView)
-        }
+        else { superview?.addSubview(emptyView) }
         
         emptyView.frame = source.emptyFrame
         

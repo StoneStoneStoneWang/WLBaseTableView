@@ -56,4 +56,3 @@ extension WLBaseRefreshTableView {
         self.mj_footer = mj_footer
     }
 }
-

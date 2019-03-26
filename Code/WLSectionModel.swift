@@ -20,9 +20,7 @@ public struct WLSectionModel<Section, ItemType> {
         self.items = items
     }
 }
-
-extension WLSectionModel
-: SectionModelType {
+extension WLSectionModel: SectionModelType {
     public typealias Identity = Section
     public typealias Item = ItemType
     
@@ -31,11 +29,10 @@ extension WLSectionModel
     }
 }
 
-extension WLSectionModel
-: CustomStringConvertible {
+extension WLSectionModel: CustomStringConvertible {
     
     public var description: String {
-        return "\(self.model) > \(items)"
+        return "\(self.model) -> \(items)"
     }
 }
 

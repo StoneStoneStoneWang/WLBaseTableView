@@ -9,13 +9,11 @@
 import UIKit
 
 // 不加 open 或者public关键字 
-class WLTableViewEmptyView: UIView {
+@objc final public class WLTableViewEmptyView: UIView {
     
-    var iconImageView: UIImageView = UIImageView()
+    final let titleLabel: UILabel = UILabel()
     
-    var titleLabel: UILabel = UILabel()
-    
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         
         commitInit()
@@ -27,10 +25,6 @@ class WLTableViewEmptyView: UIView {
     
     public func emptyViewShow(_ source: WLTableViewEmptyViewSource) {
         
-        iconImageView.image = UIImage(named: source.icon)
-        
-        iconImageView.frame = source.iconFrame
-        
         titleLabel.attributedText = source.emptyText
         
         titleLabel.frame = source.emptyTextFrame
@@ -38,9 +32,7 @@ class WLTableViewEmptyView: UIView {
 }
 extension WLTableViewEmptyView {
     
-    func commitInit() {
-        
-        addSubview(iconImageView)
+    public func commitInit() {
         
         addSubview(titleLabel)
     }

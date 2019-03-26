@@ -11,11 +11,7 @@ import UIKit
 
 public protocol WLTableViewEmptyViewSource {
     
-    var icon: String { get }
-    
     var emptyText: NSAttributedString { get }
-    
-    var iconFrame: CGRect { get }
     
     var emptyTextFrame: CGRect { get }
     

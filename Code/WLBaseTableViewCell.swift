@@ -37,48 +37,7 @@ open class WLBaseTableViewCell: UITableViewCell {
     
     open var lineType: WLBottomLineType = .lightgray {
         
-        willSet {
-            
-            bottomLine.backgroundColor = WLHEXCOLOR(hexColor: newValue.rawValue)
-        }
-    }
-    open var lineFrame: CGRect = .zero {
-        
-        willSet {
-            
-            bottomLine.frame = newValue
-        }
-    }
-    
-    open var lineImageName: String = "" {
-        
-        willSet {
-            
-            bottomLine.image = UIImage(named: newValue)
-        }
-    }
-    
-    open var titleFrame: CGRect = .zero {
-        
-        willSet {
-            
-            titleLabel.frame = newValue
-        }
-    }
-    open var iconImageName: String = "" {
-        
-        willSet {
-            
-            iconImageView.image = UIImage(named: newValue)
-        }
-    }
-    
-    open var iconFrame: CGRect = .zero {
-        
-        willSet {
-            
-            iconImageView.frame = newValue
-        }
+        willSet { bottomLine.backgroundColor = WLHEXCOLOR(hexColor: newValue.rawValue) }
     }
     
     public static func baseTableViewCell(_ lineType: WLBottomLineType ,_ reuseIdentifier: String) -> Self {
@@ -89,6 +48,7 @@ open class WLBaseTableViewCell: UITableViewCell {
     required public convenience init(_ lineType: WLBottomLineType ,style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         
         self.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.lineType = lineType
     }
     
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -124,14 +84,14 @@ extension WLBaseTableViewCell {
     open override func layoutSubviews() {
         super.layoutSubviews()
         
-        lineFrame = CGRect(x: 0, y: bounds.height - 1, width: bounds.width, height: 1)
+        bottomLine.frame = CGRect(x: 0, y: bounds.height - 1, width: bounds.width, height: 1)
     }
 }
-
 
 extension WLBaseTableViewCell {
     
     public enum WLBottomLineType: String {
+        case none = ""
         
         case white = "#ffffff"
         
