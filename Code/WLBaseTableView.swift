@@ -73,4 +73,11 @@ extension WLBaseTableView {
         
         emptyView.emptyViewShow(source)
     }
+    
+    public func emptyViewHidden() {
+        
+        emptyView.isHidden = true
+        
+        emptyView.removeFromSuperview()
+    }
 }

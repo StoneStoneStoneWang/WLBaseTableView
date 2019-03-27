@@ -3,10 +3,10 @@
 Pod::Spec.new do |s|
 
 s.name         = "WLBaseTableView"
-s.version      = "1.2.7"
+s.version      = "1.2.8"
 s.summary      = "A Lib For tableview."
 s.description  = <<-DESC
-A Lib For tableView with MJRefresh.
+A Lib For tableView with MJRefresh and rxswift .
 DESC
 
 s.homepage     = "https://github.com/StoneStoneStoneWang/WLBaseTableView"

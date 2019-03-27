@@ -15,6 +15,11 @@ import WLToolsKit
 public struct MySection<ItemType: IdentifiableType & Equatable> {
     public var header: String
     public var items: [Item]
+    
+    public init(header: String, items: [Item]) {
+        self.header = header
+        self.items = items
+    }
 }
 
 extension MySection : AnimatableSectionModelType {

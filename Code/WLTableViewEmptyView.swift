@@ -11,6 +11,8 @@ import UIKit
 // 不加 open 或者public关键字 
 @objc final public class WLTableViewEmptyView: UIView {
     
+    final let iconImageView: UIImageView = UIImageView()
+    
     final let titleLabel: UILabel = UILabel()
     
     public override init(frame: CGRect) {
@@ -25,9 +27,13 @@ import UIKit
     
     public func emptyViewShow(_ source: WLTableViewEmptyViewSource) {
         
-        titleLabel.attributedText = source.emptyText
+        titleLabel.attributedText = source.emptyAText
         
-        titleLabel.frame = source.emptyTextFrame
+        titleLabel.frame = source.emptyFrame
+        
+        iconImageView.frame = source.emptyIconFrame
+        
+        iconImageView.image = UIImage(named: source.emptyIcon)
     }
 }
 extension WLTableViewEmptyView {

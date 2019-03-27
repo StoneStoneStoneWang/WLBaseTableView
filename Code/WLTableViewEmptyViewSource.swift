@@ -11,11 +11,13 @@ import UIKit
 
 public protocol WLTableViewEmptyViewSource {
     
-    var emptyText: NSAttributedString { get }
-    
-    var emptyTextFrame: CGRect { get }
+    var emptyAText: NSAttributedString { get }
     
     var emptyFrame: CGRect { get }
+    
+    var emptyIcon: String { get }
+    
+    var emptyIconFrame: CGRect { get }
     // 是否响应tableview的手势
     var canResponse: Bool { get }
     
