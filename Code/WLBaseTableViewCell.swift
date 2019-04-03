@@ -8,6 +8,7 @@
 
 import UIKit
 import WLToolsKit
+
 open class WLBaseTableViewCell: UITableViewCell {
     
     var indexPath: IndexPath!
