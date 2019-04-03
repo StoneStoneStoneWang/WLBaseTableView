@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "WLBaseTableView"
-s.version      = "1.2.9"
+s.version      = "1.3.0"
 s.summary      = "A Lib For tableview."
 s.description  = <<-DESC
 A Lib For tableView with MJRefresh and rxswift .
@@ -15,7 +15,7 @@ s.author             = { "StoneStoneStoneWang" => "yuanxingfu1314@163.com" }
 s.platform     = :ios, "9.0"
 s.ios.deployment_target = "9.0"
 
-s.swift_version = '4.2'
+s.swift_version = '5'
 
 s.frameworks = 'UIKit', 'Foundation'
 
