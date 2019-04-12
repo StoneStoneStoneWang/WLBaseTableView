@@ -71,16 +71,6 @@ Pod::Spec.new do |spec|
     model.dependency 'WLToolsKit/WLCommon'
   end
   
-  #  spec.dependency 'WLToolsKit'
-  #
-  #  spec.dependency 'MJRefresh'
-  #
-  #  spec.dependency 'RxSwift'
-  #
-  #  spec.dependency 'RxCocoa'
-  #
-  #  spec.dependency 'RxDataSources'
-  
 end
 
 

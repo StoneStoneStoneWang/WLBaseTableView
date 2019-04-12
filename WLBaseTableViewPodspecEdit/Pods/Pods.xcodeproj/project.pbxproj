@@ -18,6 +18,7 @@
 		59A9C2D88E5CF5C6B8DA020613C536F4 /* Pods-WLBaseTableViewPodspecEdit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLBaseTableViewPodspecEdit-dummy.m"; sourceTree = "<group>"; };
 		6491AC0BD88240C92F52E868E32E6441 /* Pods_WLBaseTableViewPodspecEdit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewPodspecEdit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF75450501AD8D345EB80ED8DF174F4 /* Pods-WLBaseTableViewPodspecEdit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLBaseTableViewPodspecEdit.debug.xcconfig"; sourceTree = "<group>"; };
+		6CC5F7862260969C0078D135 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		8E598DBE1E8663D841B64387F61280F9 /* Pods-WLBaseTableViewPodspecEdit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLBaseTableViewPodspecEdit.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* WLBaseTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = WLBaseTableView.podspec; path = ../../WLBaseTableView.podspec; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A5ADA66317E48D0D3F9E530D2AA265B3 /* Pods-WLBaseTableViewPodspecEdit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLBaseTableViewPodspecEdit-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* WLBaseTableView.podspec */,
+				6CC5F7862260969C0078D135 /* README.md */,
 				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
 				1514C035169644BB98BCDF2ACDED3DB6 /* Products */,
 				82A55CB03A8162BAC879832A990402FA /* Targets Support Files */,
