@@ -8,7 +8,6 @@
 
 import UIKit
 import RxSwift
-import RxCocoa
 import WLToolsKit
 
 open class WLBaseTableView: UITableView {
@@ -16,21 +15,12 @@ open class WLBaseTableView: UITableView {
     public let disposeBag = DisposeBag()
     
     fileprivate final let emptyView: WLTableViewEmptyView = WLTableViewEmptyView(frame: .zero)
-    
-    public static func baseTableView() -> Self {
-        
-        return self.init(frame: .zero,style: .plain)
-    }
-    
-    public static func baseTableView(frame: CGRect) -> Self {
-        
-        return self.init(frame: frame,style: .plain)
-    }
-    
-    public static func baseTableView(frame: CGRect, style: UITableView.Style) -> Self {
-        
-        return self.init(frame: frame,style: style)
-    }
+    @objc (baseTableView)
+    public static func baseTableView() -> Self { return self.init(frame: .zero,style: .plain) }
+    @objc (baseTableViewWithFrame:)
+    public static func baseTableView(frame: CGRect) -> Self { return self.init(frame: frame,style: .plain) }
+    @objc (baseTableViewWithFrame:andStyle:)
+    public static func baseTableView(frame: CGRect, style: UITableView.Style) -> Self { return self.init(frame: frame,style: style) }
     
     public required override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -44,8 +34,8 @@ open class WLBaseTableView: UITableView {
 }
 
 extension WLBaseTableView {
-    
-    @objc open func commitInit() {
+    @objc (commitInit)
+    open func commitInit() {
         
         showsVerticalScrollIndicator = false
         
@@ -60,7 +50,7 @@ extension WLBaseTableView {
 }
 
 extension WLBaseTableView {
-    
+    @objc (emptyViewShowWithDataSource:)
     public func emptyViewShow(_ source: WLTableViewEmptyViewSource) {
         
         if source.canResponse { addSubview(emptyView) }
@@ -73,7 +63,7 @@ extension WLBaseTableView {
         
         emptyView.emptyViewShow(source)
     }
-    
+    @objc (emptyViewHidden)
     public func emptyViewHidden() {
         
         emptyView.isHidden = true

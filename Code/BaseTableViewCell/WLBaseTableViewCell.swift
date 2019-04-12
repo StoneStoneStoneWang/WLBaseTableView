@@ -8,18 +8,19 @@
 
 import UIKit
 import WLToolsKit
-
+@objc (WLBaseTableViewCell)
 open class WLBaseTableViewCell: UITableViewCell {
     
     var indexPath: IndexPath!
     
+    @objc (iconImageView)
     open var iconImageView: UIImageView = UIImageView().then {
         
         $0.contentMode = .scaleAspectFill
         
         $0.tag = 2001
     }
-    
+    @objc (titleLabel)
     open var titleLabel: UILabel = UILabel().then {
         
         $0.tag = 2002
@@ -35,12 +36,12 @@ open class WLBaseTableViewCell: UITableViewCell {
         
         $0.tag = 2003
     }
-    
+    @objc (lineType)
     open var lineType: WLBottomLineType = .lightgray {
         
-        willSet { bottomLine.backgroundColor = WLHEXCOLOR(hexColor: newValue.rawValue) }
+        willSet { bottomLine.backgroundColor = WLHEXCOLOR(hexColor: newValue.colorHex) }
     }
-    
+    @objc (baseTableViewCellWithLineType: andReuseIdentifier:)
     public static func baseTableViewCell(_ lineType: WLBottomLineType ,_ reuseIdentifier: String) -> Self {
         
         return self.init(lineType,style: .default ,reuseIdentifier: reuseIdentifier)
@@ -63,8 +64,8 @@ open class WLBaseTableViewCell: UITableViewCell {
 }
 
 extension WLBaseTableViewCell {
-    
-    @objc open func commitInit() {
+    @objc (commitInit)
+    open func commitInit() {
         
         selectionStyle = .none
         
@@ -91,13 +92,24 @@ extension WLBaseTableViewCell {
 
 extension WLBaseTableViewCell {
     
-    public enum WLBottomLineType: String {
-        case none = ""
+    @objc (WLBottomLineType)
+    public enum WLBottomLineType: Int {
+        case none
         
-        case white = "#ffffff"
+        case white
         
-        case lightgray = "#eeeeee"
+        case lightgray
         
-        case black = "#000000"
+        case black
+        
+        var colorHex: String {
+            
+            switch self {
+            case .none: return ""
+            case .lightgray: return "#eeeeee"
+            case .black: return "#000000"
+            case .white: return "#ffffff"
+            }
+        }
     }
 }

@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import RxCocoa
-import RxSwift
 import RxDataSources
 
 public struct WLSectionModel<Section, ItemType> {

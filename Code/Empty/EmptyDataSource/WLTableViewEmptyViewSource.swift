@@ -8,8 +8,8 @@
 
 import Foundation
 import UIKit
-
-public protocol WLTableViewEmptyViewSource {
+@objc (WLTableViewEmptyViewSource)
+public protocol WLTableViewEmptyViewSource: NSObjectProtocol {
     
     var emptyAText: NSAttributedString { get }
     

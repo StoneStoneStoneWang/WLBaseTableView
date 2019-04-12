@@ -35,13 +35,11 @@ public extension Reactive where Base: MJRefreshComponent {
         }
     }
 }
-
-open class WLBaseRefreshTableView: WLBaseTableView {
-    
-}
+@objc (WLBaseRefreshTableView)
+open class WLBaseRefreshTableView: WLBaseTableView { }
 extension WLBaseRefreshTableView {
-    
-    @objc open override func commitInit() {
+    @objc (commitInit)
+    open override func commitInit() {
         super.commitInit()
         
         let mj_header = MJRefreshNormalHeader()
