@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 @objc (WLTableViewEmptyViewSource)
-public protocol WLTableViewEmptyViewSource: NSObjectProtocol {
+public protocol WLTableViewEmptyViewSource {
     
     var emptyAText: NSAttributedString { get }
     
