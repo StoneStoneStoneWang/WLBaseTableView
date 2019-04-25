@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLBaseTableView"
-  spec.version      = "1.3.2"
+  spec.version      = "1.3.3"
   spec.summary      = "A Lib For tableview."
   spec.description  = <<-DESC
   A Lib For tableView with MJRefresh and rxswift .
@@ -25,50 +25,51 @@ Pod::Spec.new do |spec|
   
   spec.static_framework = true
   
-  spec.subspec 'WLEmpty' do |empty|
+  spec.subspec 'Empty' do |empty|
     
-    empty.subspec 'WLEmptyDataSource' do |source|
+    empty.subspec 'EmptyDataSource' do |source|
       
       source.source_files = "Code/Empty/EmptyDataSource/*.{swift}"
     end
-    empty.subspec 'WLEmptyView' do |view|
+    empty.subspec 'EmptyView' do |view|
       
       view.source_files = "Code/Empty/EmptyView/*.{swift}"
-      view.dependency 'WLBaseTableView/WLEmpty/WLEmptyDataSource'
+      view.dependency 'WLBaseTableView/Empty/EmptyDataSource'
     end
     
   end
-  spec.subspec 'WLBaseTableViewCell' do |cell|
+  spec.subspec 'BTVC' do |cell|
     
     cell.source_files = "Code/BaseTableViewCell/*.{swift}"
-    cell.dependency 'WLToolsKit/WLThen'
-    cell.dependency 'WLToolsKit/WLColor'
+    cell.dependency 'WLToolsKit/Then'
+    cell.dependency 'WLToolsKit/Color'
   end
-  spec.subspec 'WLBTV' do |view|
+  spec.subspec 'BTV' do |view|
     
     view.source_files = "Code/BaseTableView/*.{swift}"
-    view.dependency 'WLToolsKit/WLThen'
-    view.dependency 'WLToolsKit/WLColor'
+    view.dependency 'WLToolsKit/Then'
+    view.dependency 'WLToolsKit/Color'
     view.dependency 'RxSwift'
-    view.dependency 'WLBaseTableView/WLEmpty/WLEmptyView'
+    view.dependency 'WLBaseTableView/Empty/EmptyView'
   end
-  spec.subspec 'WLRTV' do |view|
+  spec.subspec 'RTV' do |view|
     
     view.source_files = "Code/RefreshTableView/*.{swift}"
     view.dependency 'RxCocoa'
     view.dependency 'MJRefresh'
-    view.dependency 'WLBaseTableView/WLBTV'
+    view.dependency 'WLBaseTableView/BTV'
   end
-  spec.subspec 'WLSectionModel' do |model|
+  
+  spec.subspec 'SM' do |model|
     
     model.source_files = "Code/SectionModel/*.{swift}"
     model.dependency 'RxDataSources'
   end
-  spec.subspec 'WLAnimationSectionModel' do |model|
+  spec.subspec 'ASM' do |model|
     
     model.source_files = "Code/AnimationSectionModel/*.{swift}"
     model.dependency 'RxDataSources'
-    model.dependency 'WLToolsKit/WLCommon'
+    model.dependency 'WLToolsKit/Common'
   end
   
 end
