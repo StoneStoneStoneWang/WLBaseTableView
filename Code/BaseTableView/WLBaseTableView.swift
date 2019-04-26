@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 import WLToolsKit
-
+@objc (WLBaseTableView)
 open class WLBaseTableView: UITableView {
     
     public let disposeBag = DisposeBag()

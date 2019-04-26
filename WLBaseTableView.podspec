@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLBaseTableView"
-  spec.version      = "1.3.3"
+  spec.version      = "1.3.4"
   spec.summary      = "A Lib For tableview."
   spec.description  = <<-DESC
   A Lib For tableView with MJRefresh and rxswift .
@@ -36,8 +36,8 @@ Pod::Spec.new do |spec|
       view.source_files = "Code/Empty/EmptyView/*.{swift}"
       view.dependency 'WLBaseTableView/Empty/EmptyDataSource'
     end
-    
   end
+  
   spec.subspec 'BTVC' do |cell|
     
     cell.source_files = "Code/BaseTableViewCell/*.{swift}"

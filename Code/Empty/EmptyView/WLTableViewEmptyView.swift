@@ -8,8 +8,9 @@
 
 import UIKit
 
-// 不加 open 或者public关键字 
-@objc final public class WLTableViewEmptyView: UIView {
+// 不加 open 或者public关键字
+@objc (WLTableViewEmptyView)
+final public class WLTableViewEmptyView: UIView {
     
     final let iconImageView: UIImageView = UIImageView()
     

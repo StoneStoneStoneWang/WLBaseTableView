@@ -35,6 +35,7 @@ public extension Reactive where Base: MJRefreshComponent {
         }
     }
 }
+
 @objc (WLBaseRefreshTableView)
 open class WLBaseRefreshTableView: WLBaseTableView { }
 extension WLBaseRefreshTableView {
