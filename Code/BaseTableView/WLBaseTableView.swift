@@ -62,6 +62,8 @@ extension WLBaseTableView {
         emptyView.backgroundColor = WLHEXCOLOR(hexColor: source.emptyBackgroundHex)
         
         emptyView.emptyViewShow(source)
+        
+        emptyView.isHidden = false
     }
     @objc (emptyViewHidden)
     public func emptyViewHidden() {

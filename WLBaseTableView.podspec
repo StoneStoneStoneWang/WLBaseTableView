@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLBaseTableView"
-  spec.version      = "1.3.4"
+  spec.version      = "1.3.5"
   spec.summary      = "A Lib For tableview."
   spec.description  = <<-DESC
   A Lib For tableView with MJRefresh and rxswift .
